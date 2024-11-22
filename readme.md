@@ -1,7 +1,7 @@
 ## Team Members
 
 - [Manikandan]()
-- [vallikannu]()
+- [Vallikkannu]()
 - [Bhuvaneswari]()
 - [Induja]()
 - [Vignesh]()
