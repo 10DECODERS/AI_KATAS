@@ -8,7 +8,7 @@
 
 ## Deployed URL
 
-https://chatapp.loclx.io
+https://chatapp.loclx.io/web_application.html
 
 ## Video Presentation
 
