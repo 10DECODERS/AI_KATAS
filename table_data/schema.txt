@@ -1,0 +1,1 @@
+{'product_data': ['productid', 'productname', 'merchantid', 'clusterid', 'clusterlabel', 'categoryid', 'category', 'price', 'stockquantity', 'description', 'rating'], 'orders_data': ['productid', 'productname', 'category', 'categoryid', 'orderid', 'customerid', 'orderstatus', 'returneligible', 'shippingdate']}

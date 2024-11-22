@@ -1,0 +1,11 @@
+# Ignore log files
+*.log
+
+# Ignore the kata_env directory
+/kata_env
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore environment variable file
+.env
