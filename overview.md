@@ -1,10 +1,18 @@
 ## Team Members
 
 - [Manikandan]()
-- [vallikannu]()
+- [Vallikkannu]()
 - [Bhuvaneswari]()
 - [Induja]()
 - [Vignesh]()
+
+## Deployed URL
+
+https://chatapp.loclx.io
+
+## Video Presentation
+
+[Watch the demo video](./videos/AIKATAS_OREILLY_CHAT_VIDEO_CHEIAI.webm)
 
 ## Table of contents
 
@@ -29,9 +37,10 @@
 - [Context Diagram](#context-diagram)
 - [Glossary](#glossary)
 - [Key Architecture Challenges](#key-architecture-challenges)
-- [Bird's Eye System View](#birds-eye-system-view)
+- [Bird&#39;s Eye System View](#birds-eye-system-view)
 - [Fitness Functions](#fitness-functions)
 - [Known Limitations](#known-limitations)
+
 ## Introduction
 
 ShopWise Solutions is an innovative and fast-growing e-commerce company based in Austin, Texas, USA. Our online platform hosts a wide range of consumer products, spanning electronics, apparel, home goods, and much more. ShopWise Solutions has built a reputation for exceptional customer experience, streamlined order fulfillment, and a diverse catalog of quality products.
@@ -57,9 +66,11 @@ The assistant should be able to handle customer inquiries related to products an
 The image is a flowchart illustrating a system architecture for processing user queries using a combination of frontend, backend, and database components.
 
 - ## Frontend:
+
   - Users interact with the system through a frontend interface.
   - A load balancer manages incoming requests from users.
 - ## Backend:
+
   - The backend handles several tasks:
     - User Query Optimization: Enhances the efficiency of user queries.
     - SQL Query Generation: Converts user queries into - SQL commands.
@@ -68,17 +79,22 @@ The image is a flowchart illustrating a system architecture for processing user 
     - Response Synthesizer: Compiles responses to user queries.
     - Conversation Summary: Summarizes interactions.
 - ## Database Layer:
-    - Involves data cleaning processes.
-  Interacts with CSV files and databases for data retrieval and storage.
+
+  - Involves data cleaning processes.
+    Interacts with CSV files and databases for data retrieval and storage.
 - ## Schema Storage:
+
   - Stores database schemas for retrieval during query processing.
 - ## Redis (Cache):
+
   - Used for session memory management to enhance performance.
 - ## LLM Server:
+
   - Contains models for:
     - Text to SQL Model: Translates text queries into SQL.
     - Summarization Model: Summarizes data or interactions.
 - ## Observability, Monitoring, Logging:
+
   - Tools for tracking system performance and logging activities.
 
 ## Architecture Approach
@@ -123,7 +139,6 @@ Why It Matters:
 
 - Testability ensures system reliability by allowing each component to be validated individually. It reduces debugging time and ensures components behave as expected under varying conditions.
   Key Testability Features:
-
 - SQL Query Validation (ADR-02): Acts as a checkpoint to test the correctness of SQL queries before execution.
 - Open-Source Models: Provide transparency, enabling extensive testing and fine-tuning to meet application-specific needs.
 - Modular Design: Allows individual services (e.g., AI Engine, Validation Layer) to be tested in isolation, ensuring end-to-end reliability.
@@ -143,13 +158,11 @@ The system prioritizes user engagement, accuracy, and scalability. It assumes mi
 
 ## Feasibility (Cost/Time)
 
-While adopting cutting-edge solutions like personalized recommendations and voice-to-text functionality adds value, the initial costs and time for implementation are significant. For example, building a custom workflow instead of using LangChain required more effort but ensured better alignment with business goals. 
-
+While adopting cutting-edge solutions like personalized recommendations and voice-to-text functionality adds value, the initial costs and time for implementation are significant. For example, building a custom workflow instead of using LangChain required more effort but ensured better alignment with business goals.
 
 ## Observability
 
 Comprehensive monitoring and logging mechanisms will be implemented to observe system performance and user interactions. Feedback loops enable real-time improvement by identifying problematic areas or recurring user complaints.
-
 
 ## Architecture Style
 
